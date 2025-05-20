@@ -1,0 +1,254 @@
+@import 'antd/dist/reset.css';
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  
+  .ant-layout-header {
+    padding: 0 12px !important;
+  }
+  
+  .admin-username {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+heading-component {
+	position: relative;
+	line-height: 1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.heading-component-inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: -15px;
+}
+
+.heading-component-inner > * {
+	margin-left: 15px;
+}
+
+.heading-component-inner > * {
+	margin-bottom: 11px;
+}
+
+.heading-component-inner * + .button {
+	margin-top: 0;
+}
+
+.heading-component-title {
+	position: relative;
+	display: inline-block;
+	padding-left: 15px;
+	line-height: 26px;
+}
+
+.heading-component-title::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	bottom: 3px;
+	left: 0;
+	border-left: 4px solid #ff0000;
+	pointer-events: auto;
+}
+
+.heading-component-title::after {
+	display: inline-block;
+	min-height: inherit;
+	width: 0;
+	vertical-align: middle;
+}
+
+.heading-component-title .icon {
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+.heading-component + * {
+	margin-top: 25px;
+}
+
+.heading-component + .row {
+	margin-top: 25px;
+}
+
+.heading-component-simple .heading-component-title {
+	padding-left: 0;
+}
+
+.heading-component-simple .heading-component-title::before {
+	display: none;
+}
+.button {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	padding: 14px 32px;
+	font-size: 14px;
+	line-height: 1.25;
+	border: 2px solid;
+	font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	user-select: none;
+	border-radius: 4px;
+	transition: .3s ease-out all;
+}
+.button-xs {
+	padding: 6px 14px;
+	font-size: 12px;
+	line-height: 1;
+	border-width: 1px;
+}
+.post-future .button-gray-outline {
+	padding: 14px 19px;
+	font-weight: 600;
+	line-height: 17px;
+	border: 1px solid #e1e1e1;
+}
+.post-gloria {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Nền mờ để làm nổi bật chữ */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.post-meta {
+  margin-bottom: 10px;
+}
+
+.post-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.read-more-btn {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+}
+
+/* Media Queries for responsive design */
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 20px;
+  }
+
+  .post-text {
+    font-size: 14px;
+  }
+
+  .read-more-btn {
+    font-size: 14px;
+  }
+
+  /* Đổi chiều cao của ảnh trên tablet */
+  .post-image {
+    height: 300px; /* Chỉnh chiều cao ảnh khi trên tablet */
+  }
+}
+
+/* For small screens (mobile phones) */
+@media (max-width: 480px) {
+  .post-title {
+    font-size: 18px;
+  }
+
+  .post-text {
+    font-size: 12px;
+  }
+
+  .read-more-btn {
+    font-size: 12px;
+  }
+
+  .post-content {
+    padding: 15px;
+  }
+
+  /* Đổi chiều cao của ảnh trên điện thoại */
+  .post-image {
+    height: 250px; /* Chỉnh chiều cao ảnh khi trên mobile */
+  }
+}
+.news-highlight {
+  margin: 40px 0;
+}
+
+.news-highlight .section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1890ff; /* Màu tiêu đề */
+}
+
+.news-highlight .ant-card-meta-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.news-highlight .ant-card-meta-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Đảm bảo ảnh có tỷ lệ phù hợp */
+.news-highlight .ant-card-cover img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .news-highlight .section-title {
+    font-size: 24px;
+  }
+}
