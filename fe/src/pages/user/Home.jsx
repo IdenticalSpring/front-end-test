@@ -15,6 +15,7 @@ import {
   SearchOutlined
 } from '@ant-design/icons';
 import NewsHighlight from "../../components/NewsHighlight";
+import ChatWidget from '../../components/ChatWidget';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -420,6 +421,8 @@ const Home = () => {
         </Divider>
         <NewsHighlight />
       </section>
+      <ChatWidget/>
+
     </div>
   );
 };
